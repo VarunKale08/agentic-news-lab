@@ -1,17 +1,219 @@
-research_task:
-  description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is {current_year}.
-  expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+# fetcher_agent_task:
+#   description: >
+#     Use the GNews Top Headlines Tool to collect 5-10 of the latest reputable news articles **highly relevant** to {topic}.
+#     Guidelines for maximizing relevance and coverage:
+#     1. Always pass "{topic}" exactly as the query parameter ("q").
+#     2. Search with category "general" and time range = today.
+#     3. If fewer than 5 relevant articles are found, expand the time range to:
+#        - past week, then past month.
+#     4. Optionally run additional searches combining {topic} with related keywords,
+#        subtopics, or entities (e.g., companies, organizations, notable people).
+#     5. Filter results to include only articles whose headline or description is about or revolve around the {topic}.
+#     6. Ensure each article contains:
+#        - Headline
+#        - Source (publisher)
+#        - Direct article URL (no topic/profile pages)
+#        - Publish Date (if available)
+#     7. Do not fabricate, simulate, or include unrelated articles.
+#   expected_output: >
+#     A raw list of 5-10 relevant news articles about {topic} or which revolve around the {topic}.
+#     Each entry must follow this format:
+#     "Headline | Source | URL | Publish Date"
+#   agent: fetcher_agent
 
-reporting_task:
+
+
+
+# cleaner_agent_task:
+#   description: >
+#     Take the raw list of news articles from the fetcher agent output.
+#     - Use all articles as provided by the fetcher.
+#     - Sort them by Publish Date (latest to oldest).
+#     - Do not add, remove, or modify any content.
+#     - Do not generate commentary or explanations.
+#     Format them as a numbered list like:
+#     1) Headline, Source, URL, Publish Date
+#     2) Headline, Source, URL, Publish Date
+#     3) ...
+#   expected_output: >
+#     A numbered list of all articles from the fetcher, sorted by Publish Date
+#     (latest first), formatted as:
+#     "1) Headline, Source, URL, Publish Date"
+#   agent: cleaner_agent
+#   context:
+#     - fetcher_agent_task
+
+
+# # summarizer_agent_task:
+# #   description: >
+# #     Summarize the articles from cleaner_agent. For each of the 10 input articles:
+# #     - Use ScrapeWebsiteTool to fetch the full content.
+# #     - If scraping succeeds, generate a 2–4 line summary in plain English.
+# #     - If scraping fails or returns no meaningful text, skip that article.
+# #     - Do not output placeholder text like "cannot complete" or summaries from just headlines.
+# #     - The final output may include fewer than 10 articles, but all must have valid summaries.
+# #   expected_output: >
+# #     A numbered list where each entry includes:
+# #     - Headline
+# #     - Source
+# #     - URL
+# #     - Publish Date
+# #     - A 2–4 line summary
+# #     Only include entries where a valid summary was successfully generated.
+# #   agent: summarizer_agent
+# #   context:
+# #     - cleaner_agent_task
+
+# summarizer_agent_task:
+#   description: >
+#     Summarize the articles from cleaner_agent. For each input article:
+#     - Parse the structured output from cleaner_agent to extract URL, headline, source, and publish date.
+#     - Use HyperbrowserLoadTool to fetch the full content from each URL individually.
+#     - If scraping succeeds and meaningful content is extracted:
+#        - Remove ads, menus, irrelevant boilerplate.
+#        - Generate a 2–4 line summary in plain English.
+#     - Skip articles that cannot be scraped or contain no meaningful content.
+#     - otherwise dont miss any article
+#     - The final output may include fewer articles than input, but all must have valid summaries.
+#     - Present each entry in the following format:
+#       "Headline | Source | URL | Publish Date | 2–4 line summary"
+#   expected_output: >
+#     A numbered list where each entry includes:
+#     - Headline
+#     - Source
+#     - URL
+#     - Publish Date
+#     - 2–4 line summary
+#     Only include entries where a valid summary was successfully generated.
+#   agent: summarizer_agent
+#   context:
+#     - cleaner_agent_task
+
+
+fetcher_agent_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Use the GNews Top Headlines Tool to collect 5-10 of the latest reputable news articles about {topic}.
+    Guidelines:
+    - Always query "{topic}" exactly.
+    - Start with category "general" and time range = today.
+    - If fewer than 5, expand to past week, then past month.
+    - Filter to ensure relevance to {topic}.
+    - Each article must include: headline, source, url, publish_date.
   expected_output: >
-    A fully fledged report with the main topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A raw list of 5-10 relevant news articles about {topic}.
+    Example:
+    "Headline | Source | URL | Publish Date"
+  agent: fetcher_agent
+
+cleaner_agent_task:
+  description: >
+    Take the raw list of news articles from fetcher_agent.
+    - Parse each entry into JSON format.
+    - Sort them by publish_date (newest first).
+    - Do not add or remove articles.
+    Output must be a JSON array of objects:
+    [
+      {"headline": "...", "source": "...", "url": "...", "publish_date": "..."},
+      ...
+    ]
+  expected_output: >
+    A JSON array of all articles sorted by publish_date (latest first).
+  agent: cleaner_agent
+  context:
+    - fetcher_agent_task
+
+summarizer_agent_task:
+  description: >
+    Summarize the articles from cleaner_agent (input is a JSON array with headline, source, url, publish_date).
+    For EACH article:
+      1) Call HyperbrowserLoadTool with {"url": url, "operation": "scrape", "params": {}}.
+      2) If "content" is real article text (not empty/boilerplate; at least a few paragraphs):
+         - Write a clean 2–3 line professional summary.
+      3) If "content" is missing, blocked, or too short:
+         - Write a 2–3 line headline-derived summary using the headline and source.
+         - Do NOT use phrases like "based on the headline" or "likely covers".
+      4) The "summary" field must never be empty.
+    Final output must ONLY be a JSON array with:
+      headline, source, url, publish_date, summary.
+  expected_output: >
+    [
+      {
+        "headline": "Some headline",
+        "source": "BBC",
+        "url": "https://example.com",
+        "publish_date": "2025-09-12T10:00:00Z",
+        "summary": "A professional 2–3 line article summary, or a 2–3 line headline-based fallback"
+      }
+    ]
+  agent: summarizer_agent
+  context:
+    - cleaner_agent_task
+
+
+sentiment_agent_task:
+  description: >
+    Take JSON from summarizer_agent (with headline, source, url, publish_date, summary).
+    For each article:
+      - Pass "summary" to VADER Sentiment Tool.
+      - Attach sentiment and confidence to the article.
+    Always output a JSON array with all articles.
+  expected_output: >
+    [
+      {
+        "headline": "...",
+        "source": "...",
+        "url": "...",
+        "publish_date": "...",
+        "summary": "...",
+        "sentiment": "positive|neutral|negative",
+        "confidence": 0.87
+      }
+    ]
+  agent: sentiment_agent
+  context:
+    - summarizer_agent_task
+
+# knowledge_agent_task:
+#   description: >
+#     Take all summarized + sentiment-annotated articles and store them
+#     into the CrewAI knowledge memory (Chroma collection).
+#     Ensure each article's headline, summary, sentiment, and metadata are indexed.
+#   expected_output: >
+#     "Articles stored successfully in knowledge memory."
+#   agent: knowledge_agent
+#   context:
+#     - sentiment_agent_task
+
+knowledge_agent_task:
+  description: >
+    Take all summarized + sentiment-annotated articles and re-output them in JSON.
+    Each article must have: headline, source, url, publish_date, summary, sentiment, confidence.
+    This JSON will be stored into knowledge memory automatically.
+  expected_output: >
+    [
+      {
+        "headline": "...",
+        "source": "...",
+        "url": "...",
+        "publish_date": "...",
+        "summary": "...",
+        "sentiment": "...",
+        "confidence": 0.87
+      }
+    ]
+  agent: knowledge_agent
+  context:
+    - sentiment_agent_task
+
+
+
+
+
+
+
+
+
+
+
+
+
