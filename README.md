@@ -12,7 +12,7 @@ The frontend dashboard provides a simple interface for searching and visualizing
 - **Summarizer Agent**: Generates strict 2-line summaries.  
 - **Sentiment Agent**: Classifies sentiment (Positive, Neutral, Negative).  
 - **Manager Agent**: Orchestrates agent workflow.  
-- **Optional Knowledge Agent**: RAG with Chroma or Pinecone.  
+- **Optional Knowledge Agent**: RAG with Chroma or Pinecone.   
 
 ---
 
