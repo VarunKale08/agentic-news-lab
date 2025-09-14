@@ -1,0 +1,94 @@
+```json
+[
+  {
+    "headline": "Rubio seeks answers from Israel on way forward in Gaza after Qatar strike",
+    "source": "AP News",
+    "url": "https://apnews.com/article/rubio-israel-netanyahu-gaza-qatar-f4e8e2058e9088b1efad6de0e99ff359",
+    "publish_date": "2025-09-13T20:02:00Z",
+    "summary": "Following Israel's strike on Hamas operatives in Qatar, U.S. Secretary of State Marco Rubio will seek answers from Israeli officials regarding their plans moving forward in Gaza.  President Trump expressed displeasure with the strike, but the U.S. will maintain its support for Israel.  Rubio's upcoming meetings with Israeli Prime Minister Netanyahu and others will focus on the path forward amidst the ongoing conflict.",
+    "sentiment": "negative",
+    "confidence": 0.4404
+  },
+  {
+    "headline": "Israel ramps up strikes on Gaza City, hospital says 32 are dead",
+    "source": "NPR",
+    "url": "https://www.npr.org/2025/09/13/g-s1-88654/israel-gaza-hamas-hospital-32-dead",
+    "publish_date": "2025-09-13T19:26:44Z",
+    "summary": "Israel intensified its attacks on Gaza City, resulting in a reported 32 deaths at one hospital, according to NPR.  This escalation follows ongoing conflict between Israel and Hamas.",
+    "sentiment": "negative",
+    "confidence": 0.6249
+  },
+  {
+    "headline": "U.N. General Assembly overwhelmingly votes for a two-state solution to the Israel-Palestinian conflict",
+    "source": "CBS News",
+    "url": "https://www.cbsnews.com/news/un-general-assembly-votes-two-state-solution-israel-palestinian-conflict-resolution/",
+    "publish_date": "2025-09-13T16:56:00Z",
+    "summary": "The UN General Assembly voted overwhelmingly in favor of a two-state solution to resolve the conflict between Israel and Palestine.  CBS News reports on this significant development towards peace in the region.",
+    "sentiment": "positive",
+    "confidence": 0.6369
+  },
+  {
+    "headline": "IDF strikes terror tower in Gaza City",
+    "source": "Israel National News",
+    "url": "https://www.israelnationalnews.com/news/414856",
+    "publish_date": "2025-09-13T16:41:00Z",
+    "summary": "The Israel Defense Forces (IDF) conducted an airstrike targeting a building in Gaza City, according to Israel National News. The report details the IDF's actions in the ongoing conflict.",
+    "sentiment": "negative",
+    "confidence": 0.4215
+  },
+  {
+    "headline": "Netanyahu's gamble on striking Qatar may have failed, but he's not backing down",
+    "source": "The Times of Israel",
+    "url": "https://www.timesofisrael.com/netanyahus-gamble-on-striking-qatar-may-have-failed-but-hes-not-backing-down/",
+    "publish_date": "2025-09-13T11:37:30Z",
+    "summary": "Israeli Prime Minister Netanyahu's decision to strike targets in Qatar may have proven unsuccessful in achieving its goals, yet he remains resolute in his approach.  The Times of Israel reports on the ongoing implications of this controversial move.",
+    "sentiment": "negative",
+    "confidence": 0.4767
+  },
+  {
+    "headline": "Trump and Witkoff dine with Qatari PM in NY, days after Israeli strike on Hamas in Doha",
+    "source": "The Times of Israel",
+    "url": "https://www.timesofisrael.com/trump-and-witkoff-dine-with-qatari-pm-in-ny-days-after-israeli-strike-on-hamas-in-doha/",
+    "publish_date": "2025-09-13T08:26:40Z",
+    "summary": "Days after an Israeli strike on Hamas in Doha, President Trump and envoy Steve Witkoff had a dinner meeting with the Qatari Prime Minister in New York City. The Times of Israel reports on this high-level meeting amidst regional tensions.",
+    "sentiment": "negative",
+    "confidence": 0.2263
+  },
+  {
+    "headline": "UN General Assembly votes to back two-state solution for Israel and Palestine",
+    "source": "Euronews.com",
+    "url": "https://www.euronews.com/2025/09/13/un-general-assembly-votes-to-back-two-state-solution-for-israel-and-palestine",
+    "publish_date": "2025-09-13T06:53:52Z",
+    "summary": "The UN General Assembly has voted to endorse a two-state solution for the Israeli-Palestinian conflict.  Euronews.com reports on this significant UN vote.",
+    "sentiment": "positive",
+    "confidence": 0.6249
+  },
+  {
+    "headline": "Israeli strike in Qatar was a gamble that appears to have backfired",
+    "source": "AP News",
+    "url": "https://apnews.com/article/israel-qatar-doha-netanyahu-assassinations-hamas-fd6b73dc26dbf06f40e6b1f19ac5bb8b",
+    "publish_date": "2025-09-13T05:10:00Z",
+    "summary": "The Israeli strike in Qatar appears to have had unintended negative consequences, according to AP News. The article analyzes the strategic implications of the strike and its impact on the ongoing conflict.",
+    "sentiment": "negative",
+    "confidence": 0.6249
+  },
+  {
+    "headline": "Paramount denounces film industry pledge to boycott Israel: 'Doesn't advance peace'",
+    "source": "The Times of Israel",
+    "url": "https://www.timesofisrael.com/paramount-denounces-film-industry-pledge-to-boycott-israel-doesnt-advance-peace/",
+    "publish_date": "2025-09-13T03:41:17Z",
+    "summary": "Paramount Pictures has rejected a call for a boycott of the Israeli film industry, stating that such actions are counterproductive to peace efforts. The Times of Israel covers Paramount's stance amidst the ongoing conflict.",
+    "sentiment": "negative",
+    "confidence": 0.4215
+  },
+  {
+    "headline": "Paramount denounces boycott of Israeli film industry as Gaza conflict divides Hollywood",
+    "source": "Los Angeles Times",
+    "url": "https://www.latimes.com/entertainment-arts/business/story/2025-09-12/paramount-denounces-israel-filmmaker-boycott",
+    "publish_date": "2025-09-12T23:31:41Z",
+    "summary": "The Gaza conflict has created divisions within Hollywood, with Paramount publicly opposing a boycott of the Israeli film industry. The Los Angeles Times reports on this industry split.",
+    "sentiment": "negative",
+    "confidence": 0.2732
+  }
+]
+```

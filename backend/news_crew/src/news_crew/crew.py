@@ -100,6 +100,7 @@ from crewai.knowledge.knowledge import Knowledge
 import os
 from pathlib import Path
 
+
 storage_dir = Path(__file__).parent / "crewai_storage"
 os.environ["CREWAI_STORAGE_DIR"] = str(storage_dir)
 

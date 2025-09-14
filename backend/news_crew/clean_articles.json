@@ -1,46 +1,64 @@
 ```json
 [
   {
-    "headline": "Paramount denounces film industry pledge to boycott Israel: 'Doesn't advance peace'",
-    "source": "The Times of Israel",
-    "url": "https://www.timesofisrael.com/paramount-denounces-film-industry-pledge-to-boycott-israel-doesnt-advance-peace/",
-    "publish_date": "2025-09-13T03:41:17Z"
+    "headline": "Far-right anti-immigration protests in London lead to clashes with police",
+    "source": "CNN",
+    "url": "https://www.cnn.com/2025/09/13/europe/far-right-anti-immigration-protests-london-intl",
+    "publish_date": "2025-09-13T21:42:37Z"
   },
   {
-    "headline": "Paramount denounces boycott of Israeli film industry as Gaza conflict divides Hollywood",
-    "source": "Los Angeles Times",
-    "url": "https://www.latimes.com/entertainment-arts/business/story/2025-09-12/paramount-denounces-israel-filmmaker-boycott",
-    "publish_date": "2025-09-12T23:31:41Z"
+    "headline": "Right Group Nick Fuentes Says Was ‘Framed’ In Charlie Kirk Shooting.",
+    "source": "Forbes",
+    "url": "https://www.forbes.com/sites/tylerroush/2025/09/13/what-is-a-groyper-nick-fuentes-says-his-followers-framed-in-charlie-kirk-shooting/",
+    "publish_date": "2025-09-13T21:08:52Z"
   },
   {
-    "headline": "UN assembly votes overwhelmingly to back two-state solution to Israel-Palestinian conflict",
-    "source": "NBC News",
-    "url": "https://www.nbcnews.com/world/israel/un-assembly-votes-overwhelmingly-back-two-state-solution-israel-palest-rcna230942",
-    "publish_date": "2025-09-12T22:37:07Z"
+    "headline": "London protest organized by far-right activist exceeds 100,000 as clashes break out",
+    "source": "PBS",
+    "url": "https://www.pbs.org/newshour/world/london-protest-organized-by-far-right-activist-exceeds-100000-as-clashes-break-out",
+    "publish_date": "2025-09-13T20:29:28Z"
   },
   {
-    "headline": "Paramount Condemns Israeli Film Boycott Amid Palestine Conflict",
-    "source": "The Hollywood Reporter",
-    "url": "https://www.hollywoodreporter.com/news/general-news/israel-palestine-conflict-boycott-hollywood-paramount-1236369609/",
-    "publish_date": "2025-09-12T21:10:00Z"
+    "headline": "Mexican congressional staffer resigns after TV comments about Charlie Kirk",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2025/sep/13/charlie-kirk-mexican-congressional-staffer-resigns",
+    "publish_date": "2025-09-13T20:00:00Z"
   },
   {
-    "headline": "Mossad said to have refused to carry out ground op to kill Hamas leaders in Qatar",
-    "source": "The Times of Israel",
-    "url": "https://www.timesofisrael.com/mossad-said-to-have-refused-to-carry-out-ground-op-to-kill-hamas-leaders-in-qatar/",
-    "publish_date": "2025-09-12T21:02:00Z"
+    "headline": "People are getting fired for allegedly celebrating Charlie Kirk’s murder. It looks like a coordinated effort",
+    "source": "CNN",
+    "url": "https://www.cnn.com/2025/09/13/business/charlie-kirk-death-fired-comments",
+    "publish_date": "2025-09-13T19:39:45Z"
   },
   {
-    "headline": "UN overwhelmingly endorses call to establish Palestinian state without Hamas",
-    "source": "The Times of Israel",
-    "url": "https://www.timesofisrael.com/un-overwhelmingly-endorses-call-to-establish-palestinian-state-without-hamas/",
-    "publish_date": "2025-09-12T18:49:52Z"
+    "headline": "Coldplay Say Send Love Anywhere, to Charlie Kirk's Family too, at Show",
+    "source": "Rolling Stone",
+    "url": "https://www.rollingstone.com/music/music-news/coldplay-says-send-love-charlie-kirk-family-london-show-1235426924/",
+    "publish_date": "2025-09-13T19:27:53Z"
   },
   {
-    "headline": "General Assembly endorses New York Declaration on two-State solution between Israel and Palestine",
-    "source": "UN News",
-    "url": "https://news.un.org/en/story/2025/09/1165835",
-    "publish_date": "2025-09-12T18:24:38Z"
+    "headline": "Questions linger about alleged shooter’s motivation for killing Charlie Kirk",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2025/sep/13/charlie-kirk-killing-alleged-shooter-motivation",
+    "publish_date": "2025-09-13T18:09:00Z"
+  },
+  {
+    "headline": "Coldplay reference Charlie Kirk at Wembley final show",
+    "source": "Far Out Magazine",
+    "url": "https://faroutmagazine.co.uk/coldplay-pay-tribute-to-charlie-kirk-at-final-wembley-show/",
+    "publish_date": "2025-09-13T16:32:00Z"
+  },
+  {
+    "headline": "Utah residents shocked Tyler Robinson is one of their own : NPR",
+    "source": "NPR",
+    "url": "https://www.npr.org/2025/09/13/nx-s1-5540130/utah-residents-are-reeling-knowing-the-charlie-kirk-suspect-is-one-of-their-own",
+    "publish_date": "2025-09-13T15:51:33Z"
+  },
+  {
+    "headline": "Charlie Kirk shooting: Widow Erika vows to carry on his legacy as suspected killer Tyler Robinson remains in custody",
+    "source": "BBC",
+    "url": "https://www.bbc.com/news/live/cdx2q24l1zqt",
+    "publish_date": "2025-09-13T15:33:09Z"
   }
 ]
 ```

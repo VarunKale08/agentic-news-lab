@@ -1,1 +1,94 @@
-Articles stored successfully in knowledge memory.
+```json
+[
+  {
+    "headline": "Far-right anti-immigration protests in London lead to clashes with police",
+    "source": "CNN",
+    "url": "https://www.cnn.com/2025/09/13/europe/far-right-anti-immigration-protests-london-intl",
+    "publish_date": "2025-09-13T21:42:37Z",
+    "summary": "Far-right anti-immigration protests in London on Saturday resulted in clashes with police, with 26 officers injured and 25 arrests made.  The protests, organized by Tommy Robinson, saw over 110,000 participants and counter-protesters.  Police reported attacks on officers after demonstrators breached a designated area.",
+    "sentiment": "negative",
+    "confidence": 0.88
+  },
+  {
+    "headline": "Right Group Nick Fuentes Says Was ‘Framed’ In Charlie Kirk Shooting.",
+    "source": "Forbes",
+    "url": "https://www.forbes.com/sites/tylerroush/2025/09/13/what-is-a-groyper-nick-fuentes-says-his-followers-framed-in-charlie-kirk-shooting/",
+    "publish_date": "2025-09-13T21:08:52Z",
+    "summary": "Right-wing figure Nick Fuentes claims his followers were framed in the Charlie Kirk shooting.  The Forbes article explores Fuentes's statement and its implications. Further details are needed for a complete summary.",
+    "sentiment": "neutral",
+    "confidence": 0.0
+  },
+  {
+    "headline": "London protest organized by far-right activist exceeds 100,000 as clashes break out",
+    "source": "PBS",
+    "url": "https://www.pbs.org/newshour/world/london-protest-organized-by-far-right-activist-exceeds-100000-as-clashes-break-out",
+    "publish_date": "2025-09-13T20:29:28Z",
+    "summary": "A far-right organized protest in London drew over 100,000 participants, leading to clashes.  The PBS report details the large-scale demonstration and resulting conflicts.  More information is needed for a comprehensive summary.",
+    "sentiment": "negative",
+    "confidence": 0.3
+  },
+  {
+    "headline": "Mexican congressional staffer resigns after TV comments about Charlie Kirk",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2025/sep/13/charlie-kirk-mexican-congressional-staffer-resigns",
+    "publish_date": "2025-09-13T20:00:00Z",
+    "summary": "A Mexican congressional staffer resigned following controversial television comments about Charlie Kirk. The Guardian article reports on the resignation and the context of the remarks.  Details about the comments are needed for full context.",
+    "sentiment": "neutral",
+    "confidence": 0.0
+  },
+  {
+    "headline": "People are getting fired for allegedly celebrating Charlie Kirk’s murder. It looks like a coordinated effort",
+    "source": "CNN",
+    "url": "https://www.cnn.com/2025/09/13/business/charlie-kirk-death-fired-comments",
+    "publish_date": "2025-09-13T19:39:45Z",
+    "summary": "Individuals are being dismissed from their jobs for purportedly celebrating the death of Charlie Kirk. CNN reports on the firings and suggests a possible coordinated effort. The article provides further details on the circumstances.",
+    "sentiment": "negative",
+    "confidence": 0.69
+  },
+  {
+    "headline": "Coldplay Say Send Love Anywhere, to Charlie Kirk's Family too, at Show",
+    "source": "Rolling Stone",
+    "url": "https://www.rollingstone.com/music/music-news/coldplay-says-send-love-charlie-kirk-family-london-show-1235426924/",
+    "publish_date": "2025-09-13T19:27:53Z",
+    "summary": "Coldplay publicly expressed their condolences to Charlie Kirk's family during a London concert.  The Rolling Stone article covers the band's statement. Further context is needed for a more complete summary.",
+    "sentiment": "pos",
+    "confidence": 0.65
+  },
+  {
+    "headline": "Questions linger about alleged shooter’s motivation for killing Charlie Kirk",
+    "source": "The Guardian",
+    "url": "https://www.theguardian.com/us-news/2025/sep/13/charlie-kirk-killing-alleged-shooter-motivation",
+    "publish_date": "2025-09-13T18:09:00Z",
+    "summary": "The motivation behind the alleged murder of Charlie Kirk remains unclear. The Guardian reports on the ongoing investigation and the unanswered questions surrounding the shooting.  The article delves into the investigation's details.",
+    "sentiment": "neg",
+    "confidence": 0.76
+  },
+  {
+    "headline": "Coldplay reference Charlie Kirk at Wembley final show",
+    "source": "Far Out Magazine",
+    "url": "https://faroutmagazine.co.uk/coldplay-pay-tribute-to-charlie-kirk-at-final-wembley-show/",
+    "publish_date": "2025-09-13T16:32:00Z",
+    "summary": "Coldplay made a reference to Charlie Kirk during their final Wembley show. The Far Out Magazine article covers the band's tribute.  Additional details are required for a complete summary.",
+    "sentiment": "neu",
+    "confidence": 0.0
+  },
+  {
+    "headline": "Utah residents shocked Tyler Robinson is one of their own : NPR",
+    "source": "NPR",
+    "url": "https://www.npr.org/2025/09/13/nx-s1-5540130/utah-residents-are-reeling-knowing-the-charlie-kirk-suspect-is-one-of-their-own",
+    "publish_date": "2025-09-13T15:51:33Z",
+    "summary": "Utah residents are shocked and reeling at the revelation that Charlie Kirk's suspected killer, Tyler Robinson, is from their community.  The NPR report highlights the community's reaction to the news.  Further details about the community's response are needed.",
+    "sentiment": "neg",
+    "confidence": 0.71
+  },
+  {
+    "headline": "Charlie Kirk shooting: Widow Erika vows to carry on his legacy as suspected killer Tyler Robinson remains in custody",
+    "source": "BBC",
+    "url": "https://www.bbc.com/news/live/cdx2q24l1zqt",
+    "publish_date": "2025-09-13T15:33:09Z",
+    "summary": "Following the shooting of Charlie Kirk, his widow Erika vows to continue his legacy while suspected killer Tyler Robinson remains in custody. The BBC news report covers the widow's statement and the suspect's current status. More details from the BBC report are required.",
+    "sentiment": "neu",
+    "confidence": 0.0
+  }
+]
+```
